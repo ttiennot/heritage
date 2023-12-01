@@ -11,9 +11,9 @@ prof::prof(std::string lenom, std::string leprenom, int année, std::string matie
 void prof::affiche()
 {
 	personne::affiche();
-	cout << "Matiere :" << matiere << ", Classes enseignées :  ";
+	cout << "Matiere :" << matiere.c_str() << ", Classes enseignées :  ";
 	for (const auto& classe : Classes) {
-		cout << classe << " ";
+		cout << classe.c_str() << " ";
 	}
 	cout << endl; // equivalent de \n
 }
